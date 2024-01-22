@@ -26,7 +26,6 @@ public class TransdirectSDK {
 
     @SneakyThrows
     public <T> T getRequestWrapped(HttpRequest request, Class<T> tClass) {
-
         return client.sendAsync(request, HttpResponse.BodyHandlers.ofString())
             .thenComposeAsync(CompletableFuture::completedFuture)
             .thenApplyAsync(HttpResponse::body)
@@ -45,7 +44,6 @@ public class TransdirectSDK {
     }
 
     protected HttpRequest post(URI uri, String payload) {
-
         return HttpRequest.newBuilder(uri)
             .POST((HttpRequest.BodyPublishers.ofString(payload)))
             .header(APIKEY_HEADER, transdirectCredentials.getAccessToken())
