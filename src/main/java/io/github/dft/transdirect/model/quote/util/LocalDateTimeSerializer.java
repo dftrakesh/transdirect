@@ -16,7 +16,7 @@ public class LocalDateTimeSerializer extends JsonSerializer<LocalDateTime> {
         .optionalStart()
         .appendOffset("+HHMM", "+0000")
         .optionalEnd()
-        .toFormatter();;
+        .toFormatter();
 
     @Override
     @SneakyThrows
