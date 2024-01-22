@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class ItemResponse {
-    public Integer id;
+    public Long id;
     public String description;
     public Integer weight;
     public Integer length;

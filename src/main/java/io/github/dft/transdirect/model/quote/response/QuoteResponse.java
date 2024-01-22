@@ -20,7 +20,7 @@ import java.util.List;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
 public class QuoteResponse {
-    public Integer id;
+    public Long id;
     public String bookedBy;
     public Double declaredValue;
     public Double insuredValue;

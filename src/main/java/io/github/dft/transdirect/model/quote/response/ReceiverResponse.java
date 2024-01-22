@@ -9,7 +9,7 @@ import lombok.Data;
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
 public class ReceiverResponse {
-    public Integer id;
+    public Long id;
     public String address;
     public String companyName;
     public String email;
