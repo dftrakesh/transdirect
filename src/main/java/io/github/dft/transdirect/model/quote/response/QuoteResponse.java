@@ -22,8 +22,8 @@ import java.util.List;
 public class QuoteResponse {
     public Integer id;
     public String bookedBy;
-    public Integer declaredValue;
-    public Integer insuredValue;
+    public Double declaredValue;
+    public Double insuredValue;
     public String description;
     public String label;
     public Sender sender;
