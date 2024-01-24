@@ -19,7 +19,7 @@ import java.util.List;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
-public class QuoteResponse {
+public class BookingResponse {
     public Long id;
     public String bookedBy;
     public Double declaredValue;

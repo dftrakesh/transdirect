@@ -10,7 +10,7 @@ import java.util.List;
 @Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonNaming(PropertyNamingStrategies.SnakeCaseStrategy.class)
-public class QuoteRequest {
+public class BookingRequest {
     public String declaredValue;
     public Sender sender;
     public Receiver receiver;
